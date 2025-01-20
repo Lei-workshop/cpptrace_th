@@ -20,7 +20,7 @@ FetchContent_Declare(
   SYSTEM)
 FetchContent_MakeAvailable(cpptrace_th)
 
-target_link_libraries(your_target PRIVATE cpptrace_th::object)
+target_link_libraries(your_target PRIVATE cpptrace_th::static)
 # OR
 target_link_libraries(your_target PRIVATE cpptrace_th::shared)
 ```
